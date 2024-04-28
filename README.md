@@ -64,7 +64,6 @@ La estructura de archivos de la aplicación sigue la convención del patrón MVC
 
 •	Vista: Almacena archivos de plantillas HTML con incrustaciones de código PHP para la presentación de la interfaz de usuario. Por ejemplo, perfil.php muestra el perfil del usuario.
 
-
 •	Controlador: Contiene archivos PHP que manejan las solicitudes del usuario y coordinan la interacción entre el Modelo y la Vista. Por ejemplo, usuarioController.php procesa las acciones relacionadas con el usuario, como el registro y la edición del perfil.
 
 Assets: Aquí se encuentran recursos estáticos como archivos CSS, JavaScript e imágenes.
@@ -73,3 +72,9 @@ index.php: Es el archivo principal de la aplicación que actúa como punto de en
 
 Diagramas Técnicos
 •	Diagrama de Clases Muestra las clases en el sistema y sus relaciones. Por ejemplo, la clase Usuario se relaciona con la clase Perfil mediante una asociación uno a uno.
+
+![Diagrama UML](https://raw.githubusercontent.com/amibi0108/amibi0108/6026148c5e7f135ea95686355ce68ed806fe8611/diagrama%20de%20clases%20uml.jpg)
+
+
+•	Diagrama Entidad-Relación (ER) Representa la estructura de la base de datos. Por ejemplo, la tabla usuarios tiene una relación uno a uno con la tabla perfiles.
+![Diagrama entidad relacion ER]()
