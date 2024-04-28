@@ -77,4 +77,96 @@ Diagramas Técnicos
 
 
 •	Diagrama Entidad-Relación (ER) Representa la estructura de la base de datos. Por ejemplo, la tabla usuarios tiene una relación uno a uno con la tabla perfiles.
-![Diagrama entidad relacion ER]()
+![Diagrama entidad relacion ER](https://raw.githubusercontent.com/amibi0108/amibi0108/74a17a4b683df535de4b695735f1b7bd27b2d318/MOD%20E-R.png)
+
+Fragmentos Descriptivos de Código:
+Modelo (modelo.php)
+class Usuario {
+    	private $id;
+   	 private $nombre;
+    	private $email;
+    		// Otros atributos y métodos
+
+    public function __construct($nombre, $email) {
+        	$this->nombre = $nombre;
+        	$this->email = $email;
+    						}
+}
+
+
+El código  define una clase llamada Usuario, que representa a un usuario en el contexto de una aplicación web u otro sistema. Aquí está la descripción de lo que hace este código:
+
+•	private $id;, private $nombre;, private $email;: Estos son atributos de la clase Usuario. Son privados, lo que significa que solo pueden ser accedidos directamente desde dentro de la clase misma. $id representa el identificador único del usuario, $nombre representa el nombre del usuario y $email representa la dirección de correo electrónico del usuario.
+
+•	public function __construct($nombre, $email) { ... }: Este es el constructor de la clase Usuario. Un constructor es un método especial que se llama automáticamente cuando se crea un nuevo objeto de la clase. Toma dos parámetros, $nombre y $email, que se utilizan para inicializar los atributos $nombre y $email del objeto. Dentro del constructor, $nombre y $email se asignan a los atributos correspondientes usando la sintaxis $this->nombre = $nombre; y $this->email = $email;.
+
+
+•	En resumen, esta clase Usuario permite crear objetos que representan usuarios, con atributos como el nombre y el correo electrónico. El constructor se encarga de inicializar estos atributos cuando se crea un nuevo objeto Usuario.
+Vista (perfil.php)
+
+<html>
+<head>
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1>Perfil de Usuario</h1>
+    <p>Nombre: <?php echo $usuario->nombre; ?></p>
+    <p>Email: <?php echo $usuario->email; ?></p>
+    <!-- Otros detalles del perfil -->
+</body>
+</html>
+En el siguiente código HTML , es una plantilla de la vista para mostrar el perfil de un usuario en una aplicación web. 
+
+•	<html>: Esta etiqueta indica el comienzo de un documento HTML.
+•	<head>: Define la sección de encabezado del documento HTML, donde se incluyen metadatos y referencias a recursos externos como hojas de estilo y scripts.
+•	<title>Perfil de Usuario</title>: Define el título del documento, que aparecerá en la pestaña del navegador o en la barra de título de la ventana.
+•	<link rel="stylesheet" href="assets/style.css">: Esta línea enlaza la hoja de estilo CSS ubicada en la carpeta "assets/style.css" para aplicar estilos al contenido de la página. La etiqueta <link> se utiliza para vincular una hoja de estilo externa al documento HTML.
+•	<body>: Define la sección del cuerpo del documento HTML, donde se coloca el contenido visible de la página.
+•	<h1>Perfil de Usuario</h1>: Encabezado de nivel 1 que muestra el título "Perfil de Usuario".
+•	<p>Nombre: <?php echo $usuario->nombre; ?></p>: Un párrafo que muestra el nombre del usuario. La etiqueta PHP <?php echo $usuario->nombre; ?> incrustada en HTML se utiliza para imprimir el nombre del usuario recuperado de la variable $usuario. Esto asume que la variable $usuario contiene un objeto con una propiedad nombre.
+•	<p>Email: <?php echo $usuario->email; ?></p>: Otro párrafo que muestra el correo electrónico del usuario. Similar al párrafo anterior, imprime el correo electrónico del usuario recuperado de la variable $usuario.
+•	<!-- Otros detalles del perfil -->: Esto es un comentario HTML que indica que aquí podrían incluirse otros detalles del perfil del usuario, pero actualmente no están presentes en la plantilla.
+•	</body>: Marca el final del cuerpo del documento HTML.
+•	</html>: Marca el final del documento HTML.
+
+
+Controlador (usuarioController.php)
+
+require_once 'modelo.php';
+require_once 'vista.php';
+// Procesamiento de la solicitud para ver el perfil del usuario
+$usuario = obtenerUsuarioPorId($id);
+include 'perfil.php';
+
+
+Este fragmento de código PHP se encarga de procesar la solicitud para ver el perfil de un usuario en una aplicación web. Aquí está la descripción de lo que hace este código:
+
+•	require_once 'modelo.php'; y require_once 'vista.php';: Estas líneas incluyen los archivos modelo.php y vista.php en el script PHP actual. La función require_once se utiliza para incluir un archivo PHP y garantiza que se incluya solo una vez, evitando la inclusión repetida de un mismo archivo.
+
+•	$usuario = obtenerUsuarioPorId($id);: Esta línea llama a la función obtenerUsuarioPorId($id) para obtener los datos del usuario cuyo identificador ($id) se proporciona. Presumiblemente, esta función está definida en el archivo modelo.php y se encarga de recuperar los datos del usuario de alguna fuente de datos, como una base de datos. El resultado se almacena en la variable $usuario.
+
+•	include 'perfil.php';: Esta línea incluye el archivo perfil.php en el script actual. El contenido de perfil.php probablemente sea una plantilla de vista que muestra el perfil del usuario. Al incluir este archivo, se renderiza la vista del perfil del usuario en la página web actual.
+Este fragmento de código PHP carga el modelo de datos y la vista necesarios, procesa la solicitud para obtener los datos del perfil del usuario, y luego incluye la vista del perfil del usuario en la página web actual.
+
+Conclusión.
+
+La aplicación web descrita, diseñada bajo el sólido patrón arquitectónico Modelo-Vista-Controlador (MVC), ofrece un claro ejemplo de cómo se puede implementar una estructura robusta y escalable para sistemas web. La adopción de esta arquitectura garantiza una clara separación de responsabilidades entre las diferentes capas del sistema, facilitando un desarrollo más organizado y modularizado. La distinción entre el Modelo, la Vista y el Controlador no solo promueve una mejor comprensión del código, sino que también simplifica el proceso de mantenimiento y permite una expansión más sencilla del proyecto a medida que los requisitos evolucionan.
+
+Una de las ventajas más destacadas del enfoque MVC es su capacidad para facilitar la reutilización de código. Al dividir la aplicación en componentes bien definidos, se crea un entorno propicio para la creación de módulos independientes y fácilmente intercambiables. Esto no solo agiliza el proceso de desarrollo, sino que también contribuye a la estandarización del código y la promoción de buenas prácticas de programación.
+
+Además, la integración de diagramas técnicos, como los diagramas de clases y los diagramas entidad-relación, desempeña un papel crucial en la comprensión y la comunicación de la estructura subyacente de la aplicación. Estos diagramas actúan como una guía visual que ayuda a los desarrolladores a comprender mejor las relaciones entre los diferentes componentes del sistema, lo que facilita la identificación de posibles áreas de mejora y optimización.
+
+La inclusión de archivos "assets", como hojas de estilo CSS, scripts JavaScript e imágenes, y el archivo index.php como punto de entrada principal, son elementos fundamentales para garantizar una experiencia de usuario completa y cohesiva. Los archivos "assets" permiten una presentación visual atractiva y una interacción dinámica en la interfaz de usuario, mientras que el archivo index.php proporciona una entrada clara y organizada al sistema.
+
+En resumen, el uso del patrón MVC no solo es esencial para el desarrollo eficiente de aplicaciones web modernas, sino que también representa un enfoque sólido y probado para la creación de sistemas escalables y mantenibles. Al adoptar este enfoque arquitectónico y complementarlo con prácticas de desarrollo sólidas, los equipos de desarrollo pueden crear aplicaciones web de alta calidad que satisfagan las necesidades cambiantes de los usuarios y las empresas en el entorno digital actual.
+
+
+
+Referencias.
+Rick-Anderson. (2023, 13 julio). ASP.NET introducción MVC. Microsoft Learn. https://learn.microsoft.com/es-es/aspnet/mvc/overview/getting-started/
+
+Diagramas de procesos en Visio - Soporte técnico de Microsoft. (s. f.). https://support.microsoft.com/es-es/topic/diagramas-de-procesos-en-visio-f064cd25-d7d5-47b8-87e1-ecb3c39cc165#:~:text=Los%20diagramas%20de%20proceso%20son,que%20indican%20el%20paso%20siguiente.
+¿Qué es una aplicación web? - Explicación de las aplicaciones web - AWS. (s. f.). Amazon Web Services, Inc. https://aws.amazon.com/es/what-is/web-application/#:~:text=Una%20aplicaci%C3%B3n%20web%20es%20un,y%20de%20una%20forma%20segura.
+
+
