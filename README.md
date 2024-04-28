@@ -52,3 +52,24 @@ Al sumergirnos en la implementación del patrón MVC, nos encontramos con una es
 Al analizar la implementación práctica del MVC en una aplicación web, es esencial considerar la estructura de archivos y carpetas, así como la integración de elementos como archivos "assets" y el archivo index.php. Estos elementos desempeñan un papel crucial en la creación de una aplicación web completa y funcional, proporcionando los recursos necesarios para la presentación de la interfaz de usuario y estableciendo el punto de entrada principal para la aplicación.
 Además, la inclusión de diagramas técnicos, como diagramas de clases o diagramas entidad-relación, enriquece nuestra comprensión de la arquitectura subyacente de la aplicación y las relaciones entre sus componentes. Estas representaciones visuales son herramientas valiosas que ayudan a los desarrolladores a planificar, diseñar y comunicar eficazmente la estructura y el flujo de la aplicación, lo que contribuye a un desarrollo más sólido y orientado a objetivos.
 ![modelo , vista controlador](https://raw.githubusercontent.com/amibi0108/amibi0108/fe3dd58d23194932ab1de57de3504ed4097419bb/mvc.jpg)
+
+Descripción Técnica de la Aplicación Web
+La aplicación web de ejemplo que utilizaremos es un sistema de gestión de perfiles de usuario. Permitirá a los usuarios registrarse, iniciar sesión, ver y editar su perfil. La aplicación está construida siguiendo el patrón MVC para garantizar una separación clara de responsabilidades y una fácil mantenibilidad.
+
+Organización de Carpetas y Archivos
+
+La estructura de archivos de la aplicación sigue la convención del patrón MVC
+
+•	Modelo: Contiene clases PHP que gestionan los datos y la lógica de negocio. Por ejemplo, la clase Usuario maneja la información del usuario y las operaciones relacionadas con la base de datos.
+
+•	Vista: Almacena archivos de plantillas HTML con incrustaciones de código PHP para la presentación de la interfaz de usuario. Por ejemplo, perfil.php muestra el perfil del usuario.
+
+
+•	Controlador: Contiene archivos PHP que manejan las solicitudes del usuario y coordinan la interacción entre el Modelo y la Vista. Por ejemplo, usuarioController.php procesa las acciones relacionadas con el usuario, como el registro y la edición del perfil.
+
+Assets: Aquí se encuentran recursos estáticos como archivos CSS, JavaScript e imágenes.
+
+index.php: Es el archivo principal de la aplicación que actúa como punto de entrada. Dirige las solicitudes del usuario al controlador correspondiente.
+
+Diagramas Técnicos
+•	Diagrama de Clases Muestra las clases en el sistema y sus relaciones. Por ejemplo, la clase Usuario se relaciona con la clase Perfil mediante una asociación uno a uno.
