@@ -10,6 +10,7 @@ DOCENTE:
 Cordeo Ocampo Martin Ramon
 ESTUDIANTE: 
 Ortiz Molina Ameyalli 
+Hernandez Ramirez Paola Michelle
 MATERIA: PROG. PHP CON MVC
  GRUPO: 8S2
 
