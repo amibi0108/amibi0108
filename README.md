@@ -29,6 +29,7 @@ Fragmentos Descriptivos de Código:	6
 Modelo (modelo.php)	6
 Vista (perfil.php)	7
 Controlador (usuarioController.php)	8
+instalacion 9 
 Conclusión.	10
 Referencias.	11
 
@@ -169,5 +170,12 @@ Rick-Anderson. (2023, 13 julio). ASP.NET introducción MVC. Microsoft Learn. htt
 
 Diagramas de procesos en Visio - Soporte técnico de Microsoft. (s. f.). https://support.microsoft.com/es-es/topic/diagramas-de-procesos-en-visio-f064cd25-d7d5-47b8-87e1-ecb3c39cc165#:~:text=Los%20diagramas%20de%20proceso%20son,que%20indican%20el%20paso%20siguiente.
 ¿Qué es una aplicación web? - Explicación de las aplicaciones web - AWS. (s. f.). Amazon Web Services, Inc. https://aws.amazon.com/es/what-is/web-application/#:~:text=Una%20aplicaci%C3%B3n%20web%20es%20un,y%20de%20una%20forma%20segura.
+
+Instalación 
+Vamos a nuestro navegador, y buscamos xampp descargar, le damos clic en descargar.
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/bb149340-25fc-4c32-968c-319e5035df1f)
+
+
+
 
 
