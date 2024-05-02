@@ -175,6 +175,52 @@ Instalación
 Vamos a nuestro navegador, y buscamos xampp descargar, le damos clic en descargar.
 ![image](https://github.com/amibi0108/amibi0108/assets/168312407/bb149340-25fc-4c32-968c-319e5035df1f)
 
+Elegimos cual se adapte mejor a nuestro sistema operativo.
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/9751b13c-0bb2-4cd2-b314-4ef368a343fb)
+
+Ya instalado, lo ejecutamos. Y aparecerá así como se muestra en la captura.
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/0c6aa233-1e11-4a82-b161-f652d85aecc9)
+
+En  donde dice apache se le dará start y en mysql.
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/c8b6e0a8-8eac-49ea-8efe-e524b1cbdade)
+
+Luego iremos a nuestro dico local (c) daremos clic en xammp3.
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/742ed749-29d7-4941-8486-105cd8ed0e97)
+
+Y después abriremos htdocs
+
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/190efef6-2080-45df-9962-e39f9568bc2f)
+
+Ahí copiaremos el proyecto.
+
+
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/a34cd389-3215-4fa4-aded-20fac133b5a3)
+
+Le damos clic y ya aparecen todos los archivos del proyecto.
+
+
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/b2b37bb7-e538-4413-98a6-e825061b4b35)
+
+Una vez realizado esto pasaremos a la configuración de la base de datos se abrirá en el navegador así.
+
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/d895859c-3d5d-46cc-a3c8-30028eea077e)
+
+
+Y posteriormente importaremos la base de datos del sistema descargado.
+Asignamos un nombre de la base de dato.
+
+
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/e5a807ba-cb61-4742-bb98-e4e204868047)
+
+Ponemos en importar, agregamos el archivo.
+
+
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/4c87c7b9-88c6-4101-9571-0864e14bb8ba)
+
+Damos clic en importar.
+
+
+![image](https://github.com/amibi0108/amibi0108/assets/168312407/1ab2ebfd-7474-46b1-a834-9fb34218dfb2)
 
 
 
