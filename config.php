@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('America/Lima');
 session_start();
-define('RUTA', 'http://localhost/shop/');
+define('RUTA', 'http://localhost/amibi0108-main/');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_NAME', 'shop');
